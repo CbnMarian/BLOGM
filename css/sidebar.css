@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.wrapper{
+  height: 100%;
+  width: 300px;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  margin-top: -16px;
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+
+
+.wrapper .menu-btn{
+  position: absolute;
+  color: white;
+  top: 10px;
+  left: 20px;
+  height: 45px;
+  width: 45px;
+  z-index: 999;
+ background: #080808 ;
+  border: 1px solid #616161;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 23px;
+  transition: all 0.3s ease;
+}
+#btn:checked ~ .menu-btn{
+  left: 247px;
+}
+#btn:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+
+.wrapper #sidebar{
+  background-color: #101010;
+  position: fixed;
+  height: 35%;
+  width: 270px;
+  overflow: hidden;
+  left: -270px;
+  transition: all 0.3s ease;
+}
+
+#btn:checked ~ #sidebar{
+  left: 0;
+}
+
+#sidebar .title{
+  color: #f2f2f2;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 61px;
+  padding-left: 10px;
+  background: #080808;
+}
+#sidebar .list-items{
+ position: relative;
+ background: #080808;
+ list-style: none;
+ height: 100%;
+ padding: 0;
+ margin: 0;
+ 
+}
+
+#sidebar .list-items li{
+  transition: all 0.3 ease;
+  padding: 10px 40px;
+  border-top: 1px solid #525252;
+  border-bottom: 1px solid #616161;
+  transition: all 0.2s ease;
+}
+
+#sidebar .list-items li:hover{
+  box-shadow: 0 0 10px 3px #222;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+#sidebar .list-items li a{
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#sidebar .list-items li a i{
+  margin-right: 20px;
+}
+
+#sidebar li a{
+  color: white;
+}
+
+#sidebar .list-items .icons{
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sidebar .list-items .icons a{
+  margin: 0.5;
+  color: rgb(255, 255, 255);
+  display: block;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  padding: 0px 10px;
+  transition: all 0.3s ease;
+}
+#sidebar .list-items .icons a:hover{
+  color: rgb(121, 111, 255);
+  text-decoration: underline;
+}

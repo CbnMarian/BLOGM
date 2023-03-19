@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Butcherman&family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@600&display=swap');
+.Top-bar-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #101010;
+  padding: 12px 0px;
+  
+}
+
+/* left section*/
+
+.left-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.middle{
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-menu{
+  color: white;
+  font-size: 25px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+/* middle section*/
+.middle p{
+  margin: 0;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.middle p:nth-child(1){
+  color: red;
+}
+
+.middle p:hover{
+  color: red;
+  border-bottom:  1px solid red;
+  border-top:  1px solid red;
+  transition: 0.25s;
+}
+
+.Button-loghin{
+  margin-right: 25px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  background-color: orange;
+  cursor: pointer;
+}
+
+.Button-loghin:hover{
+  background-color: rgb(255, 185, 56);
+  transition: 0.25s;
+}
+
